@@ -1,10 +1,10 @@
-a = int(input("a="))
-b = int(input("b="))
-c = int(input("c="))
-d = int(input("d="))
-f = int(input("f="))
-if f-d != 0:
-    ans = (a*b-c)/(f-d)
-    print(ans)
+a = float(input("a="))
+b = float(input("b="))
+c = float(input("c="))
+d = float(input("d="))
+f = float(input("f="))
+if f - d != 0:
+    mag = (a * b - c) / (f - d)
+    print(mag)
 else:
     print("деление на 0!!!")
