@@ -8,5 +8,9 @@ elif x < 0 and y > 0:
     print("2 четверть")
 elif x < 0 and y < 0:
     print("3 четверть")
+elif x == 0 and y > 0 or y < 0:
+    print("точка лежит на оси ординат")
+elif x < 0 or x > 0 and y == 0:
+    print("точка лежит на оси абцисс")
 else:
-    print("точка лежит на оси")
+    print("точка лежит в начале координат")
