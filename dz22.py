@@ -1,4 +1,4 @@
-a, b = input("введите число:"), ["наибольшее:"]
+a, b = input("введите число:"), []
 while a:
     b.append(a)
     a = input()
