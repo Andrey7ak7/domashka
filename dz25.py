@@ -1,1 +1,3 @@
-print(*list(input("введите число:")), sep='\n')
+n = input()
+for i in range(len(n)):
+    print(n[i])
