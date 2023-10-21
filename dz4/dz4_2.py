@@ -1,5 +1,4 @@
-def f():
-    n = int(input())
+def f(n):
     if n > 1:
         f = 1
         while n > 1:
@@ -10,7 +9,6 @@ def f():
         return 1
     else:
         return "не существует"
-print(f())
 
 
 if __name__ == "__main__":

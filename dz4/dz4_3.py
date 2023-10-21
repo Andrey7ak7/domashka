@@ -4,8 +4,6 @@ def f(x):
     else:
         return False
 
-x = input("Введите строку: ")
-print(f(x))
 
 if __name__ == '__main__':
-    print(f(input()))
+    print(f(input("введите строку:")))
