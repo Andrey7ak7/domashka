@@ -4,7 +4,7 @@ def fact(n):
     f = 1
     while n:
         f = f * n
-    n -= 1
+        n -= 1
     return f
 
 if __name__ == '__main__':
