@@ -1,11 +1,6 @@
 def func(x):
-    y = set()
-    for i in x:
-        if i in y:
-            return False
-        y.add(i)
-    return True
-
+    x = [(i, type(i)) for i in x]
+    return len(x) == len(set(x))
 
 if __name__ == "__main__":
-    print(func(input()))
+      print(func([input().split()]))

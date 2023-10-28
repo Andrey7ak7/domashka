@@ -10,11 +10,9 @@ from dz4.dz4_3 import func
         ([10, 20, 30], True),
         ("abcd", True),
         ("abcbd", False),
-        #(["abcd", 1, 2, 3], True),
-        #([]"abcbd", 1, 2, 3], False),
-        #({"abcd", 1, 2, 2}, False),
-        #({"abcdb", 1, 3, 3}, False)
-        
+        ([1, 2, "a", "b", "c", "d", 3, 4], True),
+        ([1, 1, "a", "b", "c", "d", 3, 4], False),
+        ([1, 2, "a", "b", "c", "b", "d", 3, 4], False)
     ]
 )
 def test(x, result):

@@ -1,17 +1,15 @@
-def f(n):
+def f(a):
     x = []
-    while n:
-        x.append(n)
-        n = input("Список: ")
+    while a:
+        x.append(a)
+        a = input()
     return x
 
-def func(x, b):
-    b %= len(x)
-    return x[-b:] + x[:-b]
 
-if __name__ == "__main__":
-    b = int(input("k: "))
-    n = input("Список: ")
-    c = 0
-    x = f(n)
-    print(func(x, b))
+def func(k, pos):
+    k = k % len(pos)
+    pos = pos[-k:] + pos[:-k]
+    return pos  
+
+if __name__ == '__main__':
+    print(func(int(input()), f(int(input()))))
